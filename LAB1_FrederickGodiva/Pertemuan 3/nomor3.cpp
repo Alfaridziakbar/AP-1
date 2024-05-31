@@ -1,8 +1,8 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-
-main(){
+main()
+{
     string hasil;
     float berat, tinggi,bmi;
     cout << "Masukkan berat badan anda (kg) : "; cin >> berat;
