@@ -7,24 +7,15 @@ int main() {
 
     cout << "Masukkan Nilai: ";
     cin >> nilai;
-
-    // If Statement, mengecek kondisi, bila true akan dikerjakan
     if (nilai <= 65) {
         cout << "Anda TIDAK Lulus" << endl;
     }
-
-
-
-    // If-Else Statement, else -> jika kondisi if tidak memenuhi, maka else akan dikerjakan
     if (nilai <= 65) {
         cout << "Anda TIDAK Lulus" << endl;
     } else {
         cout << "Anda Lulus" << endl;
     }
 
-
-
-    // If-Else-If Statement, else if dikerjakan jika tidak memenuhi if, dan memenuhi else if
     if (nilai == 100) {
         cout << "Anda Hebat" << endl;
     } else if (nilai <= 65) {
@@ -33,9 +24,6 @@ int main() {
         cout << "Anda Lulus" << endl;
     }
 
-
-
-    // Nested If Statement
     if (nilai <= 65) {
         cout << "Anda TIDAK Lulus" << endl;
     } else {
@@ -46,9 +34,6 @@ int main() {
         }
     }
 
-
-    
-    // Switch Case, hanya dapat dipakai pada int dan char
     switch (nilai) {
         case 1:
             cout << "Senin" << endl;
@@ -76,9 +61,6 @@ int main() {
             break;      // Opsional
     }
 
-
-
-    // Switch Case For Range
     switch (nilai) {
         case 85 ... 100:
             cout << "A" << endl;
@@ -103,9 +85,6 @@ int main() {
             break;
     }
 
-
-
-    // Ternary Operator, memasukkan data ke variabel melalui pengkondisian
     string checkNum = (nilai % 2 == 0) ? "Genap" : "Ganjil";
     cout << nilai << " adalah bilangan " << checkNum << endl;
 }
